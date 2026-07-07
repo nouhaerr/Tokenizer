@@ -9,9 +9,9 @@ Déploiement via Remix IDE (https://remix.ethereum.org)
 - Explorer : https://sepolia.etherscan.io
 
 ## Contrat déployé
-- Adresse : 0xa770761CF94fE7d74c3F0b191FBc0AE17c5A20Dd
+- Adresse : 0xBb6a07428b43fA31FEE110FAb9f55c562c28Ac92
 - Token : Token42 (TK42)
-- Explorer : https://sepolia.etherscan.io/address/0xa770761CF94fE7d74c3F0b191FBc0AE17c5A20Dd
+- Explorer : https://sepolia.etherscan.io/address/0xBb6a07428b43fA31FEE110FAb9f55c562c28Ac92
 
 ## Étapes de déploiement
 1. Aller sur https://remix.ethereum.org
@@ -27,7 +27,7 @@ Déploiement via Remix IDE (https://remix.ethereum.org)
 1. Aller sur https://remix.ethereum.org
 2. Compiler Token42.sol (étapes 1-5 ci-dessus)
 3. Dans "Deploy & Run Transactions" → Environment → "Connect wallet - MetaMask"
-4. Dans "At Address" → coller : 0xa770761CF94fE7d74c3F0b191FBc0AE17c5A20Dd
+4. Dans "At Address" → coller : 0xBb6a07428b43fA31FEE110FAb9f55c562c28Ac92
 5. Cliquer "At Address" → le contrat apparaît dans "Deployed Contracts"
 6. Tu peux maintenant appeler transfer, burn, mint, balanceOf directement
 

@@ -13,14 +13,14 @@
 
 1. Ouvre MetaMask
 2. "Importer un token"
-3. Colle l'adresse du contrat : `0xa770761CF94fE7d74c3F0b191FBc0AE17c5A20Dd`
+3. Colle l'adresse du contrat : `0xBb6a07428b43fA31FEE110FAb9f55c562c28Ac92`
 4. Le symbole TK42 et les décimales (18) se remplissent automatiquement
 
 ## Interagir avec le contrat
 
 ### Via Etherscan (sans code)
 
-1. Va sur https://sepolia.etherscan.io/address/0xa770761CF94fE7d74c3F0b191FBc0AE17c5A20Dd
+1. Va sur https://sepolia.etherscan.io/address/0xBb6a07428b43fA31FEE110FAb9f55c562c28Ac92
 2. Onglet "Contract" → "Write Contract"
 3. Connecte MetaMask
 4. Tu peux appeler `mint`, `burn`, `transfer` directement
@@ -33,6 +33,6 @@
 4. Onglet "Deploy & Run Transactions"
 5. Environment → "Injected Provider - MetaMask"
 6. Connecte MetaMask sur Sepolia
-7. Dans "At Address" colle : `0xa770761CF94fE7d74c3F0b191FBc0AE17c5A20Dd`
+7. Dans "At Address" colle : `0xBb6a07428b43fA31FEE110FAb9f55c562c28Ac92`
 8. Clique "At Address" → le contrat apparaît dans "Deployed Contracts"
 9. Tu peux appeler toutes les fonctions directement

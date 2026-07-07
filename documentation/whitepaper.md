@@ -40,8 +40,8 @@ Le contrat hérite du contrat OpenZeppelin ERC20 et implémente :
 
 - Réseau : Ethereum Sepolia Testnet
 - Chain ID : 11155111
-- Adresse : 0xa770761CF94fE7d74c3F0b191FBc0AE17c5A20Dd
-- Explorer : https://sepolia.etherscan.io/address/0xa770761CF94fE7d74c3F0b191FBc0AE17c5A20Dd
+- Adresse : 0xBb6a07428b43fA31FEE110FAb9f55c562c28Ac92
+- Explorer : https://sepolia.etherscan.io/address/0xBb6a07428b43fA31FEE110FAb9f55c562c28Ac92
 
 ## Utilisation
 
