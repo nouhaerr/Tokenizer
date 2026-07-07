@@ -2,7 +2,7 @@
 
 ## Résumé
 
-Token42 (TK42) est un token utilitaire BEP-20 déployé sur BNB Smart Chain.
+Token42 (TK42) est un token utilitaire ERC-20 déployé sur Ethereum Sepolia Testnet.
 Il sert de démonstration complète du cycle de vie d'un token :
 création, distribution, transfert et destruction.
 
@@ -14,26 +14,34 @@ encodées dans le smart contract.
 
 ## Tokenomics
 
-| Paramètre        | Valeur              |
-|------------------|---------------------|
-| Nom              | Token42             |
-| Symbole          | TK42                |
-| Supply maximale  | 42 000 000 TK42     |
-| Decimals         | 18                  |
-| Distribution     | 100% à l'owner au déploiement |
+| Paramètre       | Valeur                          |
+|-----------------|---------------------------------|
+| Nom             | Token42                         |
+| Symbole         | TK42                            |
+| Supply maximale | 42 000 000 TK42                 |
+| Decimals        | 18                              |
+| Distribution    | 100% à l'owner au déploiement  |
 
 ## Sécurité
 
-- **Ownable** : seul l'owner peut minter de nouveaux tokens
-- **MAX_SUPPLY** : impossible de dépasser 42M tokens, vérification on-chain
-- **Pas de pause** : le contrat ne peut pas être gelé (simplicité volontaire)
-- **Burn public** : chaque utilisateur contrôle la destruction de ses tokens
+- **onlyOwner** : modifier custom qui vérifie que msg.sender == owner avant d'exécuter mint
+- **MAX_SUPPLY** : impossible de dépasser 42M tokens, vérification on-chain dans mint()
+- **Burn public** : chaque utilisateur contrôle la destruction de ses propres tokens
+- **Pas de clé privée** : aucune information sensible dans le code ou le repo
 
 ## Architecture technique
 
-Le contrat hérite de deux contrats OpenZeppelin :
-- `ERC20` : implémentation standard du token fongible
-- `Ownable` : gestion des permissions par adresse propriétaire
+Le contrat hérite du contrat OpenZeppelin ERC20 et implémente :
+- `owner` : variable qui stocke l'adresse du déployeur
+- `onlyOwner` : modifier custom qui protège la fonction mint
+- `MAX_SUPPLY` : constante qui limite la supply totale à 42 millions
+
+## Réseau
+
+- Réseau : Ethereum Sepolia Testnet
+- Chain ID : 11155111
+- Adresse : 0xa770761CF94fE7d74c3F0b191FBc0AE17c5A20Dd
+- Explorer : https://sepolia.etherscan.io/address/0xa770761CF94fE7d74c3F0b191FBc0AE17c5A20Dd
 
 ## Utilisation
 
